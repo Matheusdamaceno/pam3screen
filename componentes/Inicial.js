@@ -4,30 +4,47 @@ import {Button, View, Text, StyleSheet} from 'react-native';
 export default class Inicial extends React.Component{
     render(){
         return(
-            <View >
-                <Text>oida</Text>
-                <Button style={styles.botao1}
-                    title="Adicionar item"
-                    color="blue"
+            <View style={styles.container}>
+                <Text style={styles.titulo}>Inscrição para o campeonato</Text>
+                <Text style={styles.texto}>A escola esta fazendo um campeonato de futebol, onde o time vencedor ganhará muitos premios. Quer participar? Clique em cadastrar!</Text>
+                <Button style={styles.botao}
+                    title="Cadastrar-se"
+                    color="#4CD97B"
                     onPress={() =>
                     this.props.navigation.navigate('AdicionaItens')    
                     }                
                 />
-                <Button style={styles.botao2}
-                    title="Lista itens"
-                    color="green"
+                <Button
+                    title="Cadastrados"
+                    color="#60F066"
                     onPress={() =>
                     this.props.navigation.navigate('ListaItens')    
                     }                
                 />  
+                <Text style={styles.eu}>Desenvolvido: Matheus Damaceno</Text>
             </View>
         );
 }};
 const styles = StyleSheet.create({
-    Button:{
-        flex: 1,
-        flexDirection: 'column',
-        justifyContent: 'center',
+    container:{
+        marginHorizontal: 16,
+    },
+    texto:{
+        fontSize: '15px',
+        marginBottom: '30px'
+    },
+    titulo:{
+        fontSize: '18px',
+        marginVertical: 10,
+        marginHorizontal: 5,
+        textAlign: 'center',
+        fontWeight: 'bold',
+    },
+    botao:{
         marginHorizontal: 18,
+    },
+    eu:{
+        marginHorizontal: 5,
+        marginTop: 170,
     },
 });

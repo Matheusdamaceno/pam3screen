@@ -27,13 +27,13 @@ class AdicionaItens extends React.Component{
     render(){
         return(
             <View style={styles.conteudoPrincipal}>
-                <Text style={styles.titulo}>Adicionar item</Text>
+                <Text style={styles.titulo}>Seu nome:</Text>
                 <TextInput style={styles.itemInput} onChangeText={item => {this.setState({item})}}/>
                 <TouchableHighlight
                     style={styles.btn}
                     underlayColor="white"
                     onPress={this.SalvaItem}>
-                    <Text style={styles.textoBtn}>Adicionar</Text>
+                    <Text style={styles.textoBtn}>Inscrever-se</Text>
                 </TouchableHighlight>                
             </View>
         )
@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
         padding: 30,
         flexDirection: 'column',
         justifyContent: 'center',
-        backgroundColor: 'green'
+        backgroundColor: '#4CD97B'
     },
     titulo:{
         marginBottom: 20,

@@ -40,6 +40,6 @@ class ListaItens extends React.Component{
         conteudoPrincipal:{
             flex: 1,    
             justifyContent: 'center',
-            backgroundColor: 'blue',
+            backgroundColor: '#60F066',
     }
 });
